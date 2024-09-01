@@ -1,41 +1,31 @@
 import React from "react";
 import java from "../../public/java.png";
 import python from "../../public/python.webp";
-import mongoDB from "../../public/mongodb.jpg";
-import express from "../../public/express.png";
-import reactjs from "../../public/reactjs.png";
-import nodejs from "../../public/node.png";
+import convertor_pdf from "../../public/convertor_pdf.png";
+import Book_store from "../../public/Book_store.jpg";
+import portfolio from "../../public/portfolio.svg";
+import Voting_logo from "../../public/Voting_logo.jpg";
 function PortFolio() {
   const cardItem = [
     {
       id: 1,
-      logo: mongoDB,
-      name: "MongoDB",
+      logo: Voting_logo,
+      name: "Voting App",
     },
     {
       id: 2,
-      logo: express,
-      name: "Express",
+      logo: convertor_pdf,
+      name: "Convertor App",
     },
     {
       id: 3,
-      logo: reactjs,
-      name: "ReactJS",
+      logo: Book_store,
+      name: "Book Store",
     },
     {
       id: 4,
-      logo: nodejs,
-      name: "NodeJS",
-    },
-    {
-      id: 5,
-      logo: python,
-      name: "Python",
-    },
-    {
-      id: 6,
-      logo: java,
-      name: "Java",
+      logo: portfolio,
+      name: "Portfolio",
     },
   ];
   return (
@@ -44,7 +34,7 @@ function PortFolio() {
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
     >
       <div>
-        <h1 className="text-3xl font-bold mb-5">PortFolio</h1>
+        <h1 className="text-3xl font-bold mb-5">My Projects</h1>
         <span className=" underline font-semibold">Featured Projects</span>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
           {cardItem.map(({ id, logo, name }) => (
@@ -60,15 +50,15 @@ function PortFolio() {
               <div>
                 <div className="px-2 font-bold text-xl mb-2">{name}</div>
                 <p className="px-2 text-gray-700">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                • Used Techstack :- NodeJS,ExpressJS,MongoDB, ReactJS, API.
                 </p>
               </div>
               <div className=" px-6 py-4 space-x-3 justify-around">
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                  Video
+                  Live
                 </button>
                 <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
-                  Source code
+                <a href="https://github.com/Ganesh8576">Github</a>  
                 </button>
               </div>
             </div>
